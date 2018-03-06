@@ -6,7 +6,7 @@ module Fluent::Plugin
     Fluent::Plugin.register_filter('dict_map', self)
 
     config_param :key_name, :string, :desc => 'The source key name'
-    config_param :destination_name, :string, :default => nil, :desc => 'The destination key name for mapped result'
+    config_param :destination_key_name, :string, :default => nil, :desc => 'The destination key name for mapped result'
     config_param :default_value, :string, :default => nil, :desc => 'The value is used when incoming value is missing in the dictionary'
     config_param :dictionary, :hash, :default => nil, :desc => 'The json dictionary for value mapping'
     config_param :dictionary_path, :string, :default => nil, :desc => 'The path of dictionary file. File ext must be `json`'
@@ -19,7 +19,7 @@ module Fluent::Plugin
       end
 
       @dict = @dictionary ? @dictionary : load_dict(@dictionary_path)
-      @target = @destination_name.nil? ? @key_name : @destination_name
+      @target = @destination_key_name.nil? ? @key_name : @destination_key_name
     end
 
     def filter(tag, time, record)

@@ -34,14 +34,14 @@ then you got filtered record like below:
 
 The target key name.
 
-### destination_name
+### destination_key_name
 
 The destination key name for mapped result. If not specified, the value is overwritten in `key_name`.
 
 Example:
 
     # configuration
-    destination_name mapped
+    destination_key_name mapped
     # filtered record
     {"msg":"hello!","level":"I","mapped":"INFO"}
 
