@@ -4,7 +4,7 @@ $:.push File.expand_path('../lib', __FILE__)
 Gem::Specification.new do |gem|
   gem.name        = "fluent-plugin-dict-map"
   gem.description = "Dictionary based map filter for Fluentd"
-  gem.homepage    = "https://github.com/repeatedly/fluent-plugin-record-dict-map"
+  gem.homepage    = "https://github.com/repeatedly/fluent-plugin-dict-map"
   gem.summary     = gem.description
   gem.version     = "0.1.0"
   gem.authors     = ["Masahiro Nakagawa"]
