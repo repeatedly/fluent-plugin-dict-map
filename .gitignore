@@ -1,0 +1,7 @@
+Gemfile.lock
+Gemfile.local
+README
+pkg/*
+test/*
+vendor/*
+.ruby-version
