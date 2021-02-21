@@ -26,6 +26,8 @@ module Fluent::Plugin
       value = record[@key_name]
       return record unless value
 
+      value = value.to_s
+
       if @dict.include?(value)
         record[@target] = @dict[value]
       elsif !@default_value.nil?
