@@ -1,3 +1,7 @@
+Release 0.1.1 - 2021/02/26
+
+  * Value coersion to string for supporting non-string value like numbers
+
 Release 0.1.0 - 2018/03/05
 
   * First release

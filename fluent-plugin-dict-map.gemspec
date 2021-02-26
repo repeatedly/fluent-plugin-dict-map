@@ -6,10 +6,9 @@ Gem::Specification.new do |gem|
   gem.description = "Dictionary based map filter for Fluentd"
   gem.homepage    = "https://github.com/repeatedly/fluent-plugin-dict-map"
   gem.summary     = gem.description
-  gem.version     = "0.1.0"
+  gem.version     = "0.1.1"
   gem.authors     = ["Masahiro Nakagawa"]
   gem.email       = "repeatedly@gmail.com"
-  gem.has_rdoc    = false
   #gem.platform    = Gem::Platform::RUBY
   gem.license     = 'MIT'
   gem.files       = `git ls-files`.split("\n")
